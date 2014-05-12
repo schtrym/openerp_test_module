@@ -1,7 +1,7 @@
 from osv import osv
 from osv import fields
 
-class test_class(osv.osv):
+class players(osv.osv):
     _name = 'test.players'
     _columns = {
             'player_name': fields.char('Name', size = 30,required= True),
