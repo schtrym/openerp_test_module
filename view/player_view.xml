@@ -1,6 +1,19 @@
 <openerp>
-    <data>
-    
-    
-    </data>
+	<data>
+
+
+		<record model="ir.ui.view" id="player_form_view">
+			<field name="name">player.form.view</field>
+			<field name="model">test.players</field>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<form string="Form for players">
+					<field name="player_name" select="1" />
+					<field name="experience" />
+				</form>
+			</field>
+		</record>
+
+		
+	</data>
 </openerp>
