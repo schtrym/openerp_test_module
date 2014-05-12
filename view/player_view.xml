@@ -40,6 +40,27 @@
 			</field>
 		</record>
 
-		<menuitem id="player_menu" name="Players" parent=""/>
+		<record model="ir.actions.act_window" id="action_player_tree_view">
+			<field name="name">action.player.tree.view</field>
+			<field name="type">ir.actions.act_window</field>
+			<field name="res_model">test.players</field>
+			<!-- <field name="domain">[('field_name','condition',criteria)]</field> -->
+			<field name="view_type">form</field>
+			<field name="view_mode">tree,form</field>
+			<field name="view_id" ref="player_tree_view" />
+			<field name="help" type="html">
+				<p class="oe_view_nocontent_create">
+					Click here to create a Player.
+				</p>
+			</field>
+		</record>
+
+		<menuitem id="player_menu" name="Players Menu" sequence="1" />
+
+		<menuitem id="player_action_menu" name="Manage" parent="player_menu" />
+
+		<menuitem id="player_list_action_menu" name="Show"
+			parent="player_action_menu" action="action_player_tree_view" />
+
 	</data>
 </openerp>
