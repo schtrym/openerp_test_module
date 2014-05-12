@@ -4,7 +4,8 @@ from osv import fields
 class players(osv.osv):
     _name = 'test.players'
     _columns = {
-            'player_name': fields.char('Name', size = 30,required= True)
+            'player_name': fields.char('Name', size = 30,required= True),
+            'experience': fields.integer('Experience') 
             }
     _order = 'player_name' 
    

@@ -20,6 +20,7 @@
 			<field name="arch" type="xml">
 				<tree string="tree_string">
 					<field name="player_name" />
+					<field name="experience" />
 				</tree>
 			</field>
 		</record>
