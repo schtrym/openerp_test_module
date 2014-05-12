@@ -14,6 +14,16 @@
 			</field>
 		</record>
 
-		
+		<record model="ir.ui.view" id="player_tree_view">
+			<field name="name">player.tree.view</field>
+			<field name="model">test.players</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="tree_string">
+					<field name="player_name" />
+					<field name="experience" />
+				</tree>
+			</field>
+		</record>
 	</data>
 </openerp>
