@@ -8,7 +8,7 @@
     This my first module in open ERP. It's just a test
     """,
     "init_xml": [],
-    'update_xml': ["view/test_view.xml"],
+    'update_xml': ["view/player_view.xml"],
     'demo_xml': [],
     'installable': True,
     'active': True,
