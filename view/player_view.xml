@@ -40,5 +40,6 @@
 			</field>
 		</record>
 
+		<menuitem id="player_menu" name="Players" parent=""/>
 	</data>
 </openerp>
