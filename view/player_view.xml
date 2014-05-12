@@ -25,5 +25,20 @@
 				</tree>
 			</field>
 		</record>
+
+		<record model="ir.ui.view" id="player_search_view">
+			<field name="name">player.search.view</field>
+			<field name="model">test.players</field>
+			<field name="arch" type="xml">
+				<search string="Search">
+					<field name="player_name" string="Player's Name"
+						filter_domain="[()]" />
+					<!-- <separator/> <filter string="Vert experienced" name="open" domain="[('state','!=','cancel')]" 
+						help="Open"/> <group expand="0" string="Group By..."> <filter string="Name" 
+						domain="[]" context="{'group_by':'name'}"/> </group> -->
+				</search>
+			</field>
+		</record>
+
 	</data>
 </openerp>
